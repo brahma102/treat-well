@@ -1,26 +1,48 @@
-html,
-body {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-* {
-  box-sizing: border-box;
+.backgroundImage {
+  background-image: url('../public/assets/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-text-color{
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.infoBackgroundImage {
+  background-image: url('../public/assets/infobg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  position: relative;
+}
+
+.infoBackgroundImage::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: linear-gradient(89.66deg, rgba(10, 10, 12, 0.93) 13.69%, rgba(11, 11, 14, 0.12) 56.82%);
+  border-radius: 14px;
+  z-index: 1;
 }

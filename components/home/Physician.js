@@ -31,7 +31,7 @@ const Physician = () => {
 
             <div className='rounded-[8px] p-[15px] flex flex-col items-center text-center relative mt-[40px] sm:mt-[0px]' style={{ backgroundColor: '#071555' }}>
                 <h4 className='text-[16px] sm:text-[18px] md:text-[20px] font-semibold m-[10px]  text-white' >Research</h4>
-                <p className='text-[14px] sm:text-[16px] lg:text-[13px]  text-white'>Research is critical in discovering new treatment options to improve patients' outcomes by preventing severe health consequences to apply effective treatments and interventions</p>
+                <p className='text-[14px] sm:text-[16px] lg:text-[13px]  text-white'>Research is critical in discovering new treatment options to improve patients outcomes by preventing severe health consequences to apply effective treatments and interventions</p>
                
             </div>
 
